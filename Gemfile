@@ -42,3 +42,6 @@ gem 'pry-rails'
 ## Gemfile for Rails 3, Rails 4, Sinatra, and Merb
 gem 'will_paginate', '~> 3.0'
 
+## For using bootstrap with rails and deploying 
+gem 'bootstrap-sass', '~> 3.2.0'
+gem 'autoprefixer-rails'
