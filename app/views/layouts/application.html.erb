@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>BandioFin</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<% if current_page?(controller: 'welcome', action: 'index') %>
+<body class="welcome">
+	<div class="container-fluid">
+		<div class="row">
+			 <div class="col-md-3">
+			 	<div class="logo">
+			 		<a href="/" id="logo">Bandio</a>
+			 	</div>
+			 </div>
+			 <div class="col-md-1"></div>
+			 <div class="col-md-8">
+			 	<nav>
+					<ul>
+					  <li><a href="/venues">Venues</a></li>
+					  <li><a href="/bands">Bands</a></li>
+					  <li><a href="/venues/new">Add Venues</a></li>
+					  <li><a href="/bands/new">Add Bands</a></li>
+					  <li><a href="/events/search">Search Concerts</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+
+		<%= yield %>
+	</div>
+</body>
+<% else %>
+<body>
+	<div class="container-fluid">
+		<header class="row">
+			 <div class="col-md-3">
+			 	<div class="logo">
+			 		<a href="/" id="logo">Bandio</a>
+			 	</div>
+			 </div>
+			 <div class="col-md-1"></div>
+			 <div class="col-md-8">
+			 	<nav>
+					<ul>
+					  <li><a href="/venues">Venues</a></li>
+					  <li><a href="/bands">Bands</a></li>
+					  <li><a href="/venues/new">Add Venues</a></li>
+					  <li><a href="/bands/new">Add Bands</a></li>
+					  <li><a href="/events/search">Search Concerts</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+		<%= yield %>
+	</div>
+</body>
+<% end %>
+</html>

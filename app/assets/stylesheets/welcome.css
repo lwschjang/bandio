@@ -1,0 +1,40 @@
+nav {
+	max-width: 100%;
+	height: 100px;
+	color: #fff;
+	text-shadow: 1px 0px 2px rgba(150, 150, 150, 1);
+}
+
+nav ul {
+	vertical-align: middle;
+	position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+nav ul li {
+	display: inline-block;
+	width: 19%;
+	text-align: center;
+}
+
+.hero {
+	margin: 0 auto;
+	margin-top: 40%;
+}
+
+.hero h1 {
+	vertical-align: middle;
+	position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+	color: #fff;
+	text-shadow: 1px 0px 2px rgba(150, 150, 150, 1);
+}
+
+.welcome {
+	background-image: url('acoustic-guitar-336479_1280.jpg');
+	background-size: cover;
+	-webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+	box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+}

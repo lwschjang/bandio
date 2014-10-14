@@ -1,0 +1,28 @@
+<div class="row title">
+	 <div class="col-md-3"></div>
+	 <div class="col-md-6">
+		<h1 class="pgtitle">The Venues</h1>
+	 </div>
+	 <div class="col-md-3"></div>
+</div>
+<div class="row">
+	 <div class="col-md-3"></div>
+	 <div class="col-md-6">
+		<ul class="list">
+		  <% @venues.each do |venue| %>
+		    <li><a href="/venues/<%= venue.id %>"><%= venue.name %></a></li>
+		  <% end %>
+		</ul>
+	 </div>
+	 <div class="col-md-3"></div>
+</div>
+<div class="row">
+	 <div class="col-md-3"></div>
+	 <div class="col-md-6">
+	 	<div class="center">
+		 	<%= will_paginate @venues %>
+			<p><%= link_to "Add a Venue", new_venue_path %></p>
+		</div>
+	 </div>
+	 <div class="col-md-3"></div>
+</div>

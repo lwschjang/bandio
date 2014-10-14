@@ -1,0 +1,17 @@
+<%= form_for @venue do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+  <br><br>
+  <%= f.label :city %><br>
+  <%= f.text_field :city %>
+  <br><br>
+  <%= f.label :state %><br>
+  <%= f.text_field :state %>
+  <br><br>
+  <%= f.label "False" %>
+  <%= f.radio_button :family_friendly, false, :value => "False" %>
+  <%= f.label "True" %>
+  <%= f.radio_button :family_friendly, true %>
+  <br><br>
+  <%= f.submit "Submit Venue" %>
+<% end %>

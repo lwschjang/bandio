@@ -1,0 +1,29 @@
+<div class="row title">
+	 <div class="col-md-3"></div>
+	 <div class="col-md-6">
+		<h1 class="pgtitle">Bands</h1>
+	 </div>
+	 <div class="col-md-3"></div>
+</div>
+<div class="row">
+	 <div class="col-md-3"></div>
+	 <div class="col-md-6">
+		<ul class="list">
+		  <% @bands.each do |band| %>
+			  <li><a href="/bands/<%= band.id %>"><%= band.name %></a></li>
+		  <% end %>
+		</ul>
+	 </div>
+	 <div class="col-md-3"></div>
+</div>
+<div class="row">
+	 <div class="col-md-3"></div>
+	 <div class="col-md-6">
+	 	<div class="center">
+		 	<%= will_paginate @bands %>
+			<p><%= link_to "Add a Band", new_band_path %></p>
+		</div>
+	 </div>
+	 <div class="col-md-3"></div>
+</div>
+

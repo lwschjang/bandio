@@ -1,0 +1,30 @@
+<div class="row title">
+   <div class="col-md-3"></div>
+   <div class="col-md-6">
+    	<h1 class="pgtitle"><%= @band.name %></h1>
+   </div>
+   <div class="col-md-3"></div>
+</div>
+<div class="row">
+   <div class="col-md-3"></div>
+   <div class="col-md-6">
+    <div class="center">
+        <p>Genre: <%= @band.genre %></p>
+        <br>
+		<p><%= @band.explicit_lyrics ? "Adults Only" : "Family Friendly" %></p>
+ 	</div>
+   </div>
+   <div class="col-md-3"></div>
+</div>
+<div class="row">
+   <div class="col-md-3"></div>
+   <div class="col-md-6">
+    <div class="center">
+      <%= link_to "Home", root_path %>
+      <br>
+  	  <%= link_to "Return to All Bands", bands_path %>
+	</div>
+   </div>
+   <div class="col-md-3"></div>
+</div>
+

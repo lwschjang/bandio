@@ -1,0 +1,32 @@
+<div class="row title">
+   <div class="col-md-3"></div>
+   <div class="col-md-6">
+    	<h1 class="pgtitle"><%= @venue.name %></h1>
+   </div>
+   <div class="col-md-3"></div>
+</div>
+<div class="row">
+   <div class="col-md-3"></div>
+   <div class="col-md-6">
+    <div class="center">
+        <p>Location: <%= @venue.city %>, <%= @venue.state %></p>
+        <br>
+		<p>Family friendly? <%= @venue.family_friendly ? "No" : "Yes" %></p>
+
+    </div>
+   </div>
+   <div class="col-md-3"></div>
+</div>
+<div class="row">
+   <div class="col-md-3"></div>
+   <div class="col-md-6">
+    <div class="center">
+      <%= link_to "Create a New Event for the #{@venue.name}", new_venue_event_path(@venue) %>
+      <br><br>
+	  <%= link_to "Back to all venues", venues_path %>
+	  </ul>
+    </div>
+   </div>
+   <div class="col-md-3"></div>
+</div>
+
