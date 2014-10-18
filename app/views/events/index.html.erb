@@ -1,7 +1,7 @@
 <div class="row title">
 	 <div class="col-md-3"></div>
 	 <div class="col-md-6">
-		<h1 class="pgtitle">Concert Results for: <%= @date %> </h1>
+		<h1 class="pgtitle">All Upcoming Shows</h1>
 	 </div>
 	 <div class="col-md-3"></div>
 </div>
@@ -10,9 +10,7 @@
 	 <div class="col-md-6">
 		<ul class="list">
 		  <% @events.each do |event| %>
-		    <p>
-		    	<%= event.band.name %> is playing at <%= event.venue.name %>
-		    </p>
+		    <li><%= event.band.name %> is playing at <%= event.venue.name %> on <%= event.date %></li>
 		  <% end %>
 		</ul>
 	 </div>
@@ -23,13 +21,7 @@
 	 <div class="col-md-6">
 	 	<div class="center">
 		 	<%= will_paginate @events %>
-		 	<a href="/events">Check out all of our other events</a>
-			<ul>
-			  <li><%= link_to "Return to Search Page", search_path %></li>
-			  <li><%= link_to "Home", root_path %></li>
-			</ul>
 		</div>
 	 </div>
 	 <div class="col-md-3"></div>
 </div>
-

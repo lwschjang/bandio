@@ -1,5 +1,9 @@
 class EventsController < ApplicationController
 
+  def index
+    @events = Event.all.paginate(:page => params[:page], :per_page => 10)
+  end
+  
   def search
   end
 
@@ -7,7 +11,7 @@ class EventsController < ApplicationController
     @date = params[:date]
     # The datetime object is incredibly flexible, and can read the HTML formatted date
     # without customization/finicking
-    @events = Event.where(date: params[:date])
+    @events = Event.where(date: params[:date]).paginate(:page => params[:page], :per_page => 10)
   end
 
   def new
