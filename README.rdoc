@@ -1,28 +1,15 @@
-== README
+# Bandio #
+==========
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Bandio was originally a homework assignment that I modified and styled to make look presentable to the masses.
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+#### Technologies Used: ####
+Ruby
+Rails
+Will-Paginate
+Bootstrap
 
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+It's viewable here:
+[Bandio](http://pure-savannah-7052.herokuapp.com/)
+
