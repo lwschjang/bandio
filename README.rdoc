@@ -1,4 +1,4 @@
-# Bandio #
+# Bandio 
 ==========
 
 Bandio was originally a homework assignment that I modified and styled to make look presentable to the masses.
@@ -15,5 +15,5 @@ Bootstrap
 
 
 It's viewable here:
-http://pure-savannah-7052.herokuapp.com/
+http://pure-savannah-7052.herokuapp.com
 
